@@ -1,0 +1,133 @@
+.group-body{
+    position: relative;
+    background-color: antiquewhite;
+    width: 500px;
+    height: 700px;
+}
+.group-chat-container{
+    position: relative;
+    background-color: #ffffff;
+    width: 400px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.group-header-container{
+    width:100% ;
+    height: 60px;
+    position: relative;
+    background-color: #ffffff;
+    align-content: center;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); 
+}
+.group-body-container{
+    width:95%;
+    height: 530px;
+    
+    position: relative;
+    left: 50%;
+    transform: translate(-50%,0);
+
+}
+.group-body-message-container{
+    display: flex;
+    height: 460px;
+    flex-direction: column;
+    padding: 10px;
+    overflow-y: auto; /* Hiển thị thanh cuộn nếu cần */
+    background-color: rgb(241, 220, 239);
+    scroll-behavior: smooth; /* Cuộn mượt mà */
+}
+.group-body-message-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.group-body-message-container::-webkit-scrollbar-thumb {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+}
+.message {
+    max-width: 70%; /* Chiếm tối đa 70% chiều rộng của container */
+    margin-bottom: 10px;
+    padding:  5px 12px 5px 12px;
+    border-radius: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    word-wrap: break-word; /* Ngắt dòng tự động */
+}
+
+.sent {
+    background-color: #aacdf2; /* Màu nền cho tin nhắn gửi */
+    align-self: flex-end; /* Đẩy tin nhắn gửi về phía bên phải */
+    margin-left: auto; /* Đẩy tin nhắn gửi về bên phải */
+}
+.received {
+    background-color: #ffffff; /* Màu nền cho tin nhắn nhận */
+    align-self: flex-start; /* Đẩy tin nhắn nhận về phía bên trái */
+    margin-right: auto; /* Đẩy tin nhắn nhận về bên trái */
+}
+
+
+.group-body-input-container{
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    bottom: 0;
+    background-color: #ffffff;
+
+
+    display: flex;
+    align-items: center;
+   
+
+    background-color: #f9f9f9;
+}
+/* .group-body-input{
+    width: 95%;
+    height: 25px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    border-radius: 15px;
+    background-color: #F0F2F5;
+    border: none;
+} */
+
+.input-field {
+    flex: 1; 
+    /* border: 1px solid #ccc; */
+    border-radius: 15px;
+    font-size: 16px;
+    resize: none; /* Ngăn người dùng thay đổi kích thước */
+    height: 30px; /* Chiều cao của textarea */
+    margin-right: 10px; /* Khoảng cách giữa textarea và nút gửi */
+}
+
+/* Nút gửi */
+.send-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+/* Hiệu ứng hover cho nút gửi */
+.send-button:hover {
+    background-color: #0056b3;
+}
+
+
+.btn:hover{
+    cursor: pointer;
+    /* background-color: aliceblue; */
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.1); 
+}

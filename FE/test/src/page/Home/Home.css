@@ -1,0 +1,97 @@
+.body{
+    position: relative;
+    background-color: antiquewhite;
+    width: 500px;
+    height: 700px;
+}
+.chat-container{
+    position: relative;
+    background-color: #ffffff;
+    width: 400px;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+}
+.header-container{
+    width:100% ;
+    height: 60px;
+    position: relative;
+    align-content: center;
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2); 
+}
+.body-container{
+    width: 100%;
+    height: 540px;
+    overflow: auto ;
+    scrollbar-width: none; /* Ẩn thanh cuộn trên Firefox */
+    -ms-overflow-style: none; /* Ẩn thanh cuộn trên Internet Explorer và Edge */
+    /* transform: translate(-50%,0); */
+}
+.search-container{
+    width:100% ;
+    height: 50px;
+    position: relative;
+    /* background-color: rgb(155, 44, 131); */
+}
+.groups-container{
+    position: relative;
+    width: 100%;
+}
+.group{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: #ffffff;
+    align-content: center;
+    margin-top: 10px;
+}
+
+.group:hover{
+   cursor: pointer;
+   background-color: aliceblue;
+}
+
+.group_unread{
+    color: black;
+    font-weight: 600;
+}
+.group_read{
+    color:#6B6E71
+}
+.btn-nav{
+
+    width:35px;
+    height:35px;
+    background-color:#D3D3D3;
+    border-radius: 50%;
+    position:absolute;
+    right:5%;
+    top:50%;
+    transform:translate(0,-50%);
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 600;
+}
+.btn-nav:hover{
+    cursor: pointer;
+    background-color:#76787c;
+}
+.search{
+    background-color: #F0F2F5;
+    width: 95%;
+    height: 30px;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform:translate(-50%,-50%);
+
+    border-radius: 15px;
+    align-content: center;
+
+}
+.search:hover{
+    cursor: pointer;
+    background-color: #D3D3D3;
+}
